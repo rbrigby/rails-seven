@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Unicornsddd</h1>
+
+<div id="unicorns">
+  <% @unicorns.each do |unicorn| %>
+    <%= render unicorn %>
+    <p>
+      <%= link_to "Show this unicorn", unicorn %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New unicorn", new_unicorn_path %>

@@ -1,0 +1,17 @@
+<%= form_with(model: minotaur) do |form| %>
+  <% if minotaur.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(minotaur.errors.count, "error") %> prohibited this minotaur from being saved:</h2>
+
+      <ul>
+        <% minotaur.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

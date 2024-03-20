@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @unicorn %>
+
+<div>
+  <%= link_to "Edit this unicorn", edit_unicorn_path(@unicorn) %> |
+  <%= link_to "Back to unicorns", unicorns_path %>
+
+  <%= button_to "Destroy this unicorn", @unicorn, method: :delete %>
+</div>
